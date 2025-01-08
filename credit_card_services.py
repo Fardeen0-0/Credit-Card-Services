@@ -8,6 +8,7 @@ print("\t\t\t~~~~~~~~~~~~~~~~~~~~~~~~~")
 print()
 print("Hello and welcome to Fardeen's Credit Card Services. What would you like to proceed with?")
 print()
+print("~ Disclaimer: All references made to establishing contact with banks is only a simulation ~")
 
 def card_generator():
     
@@ -361,16 +362,16 @@ while True:
         missing()
  
     elif choice==4:
-        time.sleep(7)
+        time.sleep(5)
         for i in '...fyi ur cvv is ':
-            print(i,end='')
+            print(i,end='', flush = True)
             time.sleep(0.3)
         time.sleep(1)
-        print('*',end='')
+        print('*',end='', flush = True)
         time.sleep(1)
-        print('*',end='')
+        print('*',end='', flush = True)
         time.sleep(1)
-        print('*')
+        print('*', flush = True)
         time.sleep(1)
         break
 
