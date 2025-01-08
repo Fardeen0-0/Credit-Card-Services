@@ -8,7 +8,6 @@ print("\t\t\t~~~~~~~~~~~~~~~~~~~~~~~~~")
 print()
 print("Hello and welcome to Fardeen's Credit Card Services. What would you like to proceed with?")
 print()
-print("~ Disclaimer: All references made to establishing contact with banks is only a simulation ~")
 
 def card_generator():
     
@@ -133,8 +132,11 @@ def card_generator():
 
 def validity_checker():
     n=int(input("Enter your credit card details: "))
-    print("Checking if your credit card is valid....(and if it is, then say goodbye to all ur money)")
-    print()
+    print("Checking if your credit card is valid....")
+    time.sleep(1)
+    print("(and if it is, then say goodbye to all ur money)")
+    time.sleep(3)
+    print("just kidding. No data is stored")
     time.sleep(3)
 
     ns=str(n)[::-1]
